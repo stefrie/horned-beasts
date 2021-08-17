@@ -5,15 +5,28 @@
 // import './App.css';
 // import Image from 'react-bootstrap/Image'
 
-
 function Main() {
     return (
-        <>
-            <h1>Coming Soon</h1>
-            {/* <h1>{props.title}</h1>
-            <h2>{props.imageUrl}</h2>
-            <h2>{props.description}</h2> */}
-        </>
+        <div>
+            <HornedBeast
+				title="Jackson's Chameleon"
+				imageUrl="https://kids.sandiegozoowildlifealliance.org/sites/default/files/2018-10/animal-hero-jackson_0.jpg"
+				description="Three-horned Chameleon native to East Africa, also found in Hawaii, Florida, and California" />
+            <HornedBeast
+				title="Impala"
+				imageUrl="http://www.storytrender.com/wp-content/uploads/2019/03/20_CATERS_MELTED_IMPALA_01-1024x683.jpg"
+				description="Deformed horns found on a male impala in Africa" />
+        </div>
+    );
+}
+
+function HornedBeast(props) {
+    return (
+        <div>
+            <h2>{props.title}</h2>
+            <img src={props.imageUrl} alt="" title=""></img>
+            <p>{props.description}</p>
+        </div>
     );
 }
 

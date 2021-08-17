@@ -1,6 +1,13 @@
 
 function Header(props) {
-    return <header><h1>Title Here: {props.title}</h1></header>;
+    return (
+        <>
+            <header>
+                <h1>{props.title}</h1>
+                <h2>{props.message}</h2>
+            </header>
+        </>
+    );
 }
 
 export default Header;

@@ -6,8 +6,14 @@
 
 // export default Footer;
 
-function Footer() {
-    return <h3>Author: Stefanie Riehle</h3>;
+function Footer(props) {
+    return (
+        <>
+            <footer>
+                <h3>Author: {props.author}</h3>
+            </footer>
+        </>
+    );
 }
 
 export default Footer;

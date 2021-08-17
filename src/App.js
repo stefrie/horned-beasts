@@ -9,13 +9,14 @@ import Footer from './Footer';
 
 
 function App() {
-  return (
-    <div>
-      <Header title="The First Fifteen Lives of Harry August" />
-      <Main message="Literary Fiction at Its Finest" />
-      <Footer author="Claire North" />
-    </div>
-  );
+	return (
+		<div>
+			<Header title="Horned Beasts" />
+			<Header message="Check out these amazing animals!" />
+			<Main />
+			<Footer author="Stefanie Riehle" />
+		</div>
+	);
 }
 
 export default App;
