@@ -2,42 +2,31 @@ import React from 'react';
 import './App.css';
 
 class HornedBeast extends React.Component {
+	constructor(props) {
+        super(props);
+        this.state = {
+            vote: 0,
+			title: this.props.title,
+        };
+    }
+
+	handleClick = () => {
+		this.setState({
+			vote: this.state.vote += 1,
+		});
+    }
+
 	render() {
+		console.log(this.state);
 		return(
-			<>
+			<div onClick={this.handleClick}>
 				<h2>{this.props.title}</h2>
 				<img src={this.props.image_url} alt="" title="" />
 				<p>{this.props.description}</p>
-			</>
+				<p>💖: {this.state.vote}</p>
+			</div>
 		);
 	}
 }
 
-
-// class BeastImage extends Component {
-//     constructor(props) {
-//         super(constructor);
-//         this.state = {
-//             "vote": "addVote"
-//         }
-//     }
-
-//     handleClick = () => {
-//         const newHeart = this.state.heart === "like" ? "Yay" : "Nay";
-//         this.setState({
-//             heart: newHeart
-//         })
-//     }
-
-//     render() {
-//         return (
-//             <div onClick={handleClick}>
-//                 <Image src={this.props.image_url} alt="some horned beast" rounded fluid />
-//                 <p>{this.state.heart}</p>
-//             </div>
-//         );
-//     }
-
 export default HornedBeast;
-
-// --------------Lab 03------------//

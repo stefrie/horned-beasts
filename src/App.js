@@ -1,11 +1,10 @@
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
 import React from 'react';
 import beastImages from './data.json';
-
 
 class App extends React.Component {
 	constructor(props) {
@@ -26,6 +25,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-
-// --------------Lab 03------------//
