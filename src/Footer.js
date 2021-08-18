@@ -1,3 +1,4 @@
+
 // --------------Lab 02------------//
 // function Footer(props) {
 //     return <h2>By acclaimed author {this.props.author}</h2>;
