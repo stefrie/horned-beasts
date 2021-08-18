@@ -3,7 +3,6 @@
 //     return <h2>By acclaimed author {this.props.author}</h2>;
 // }
 
-
 // export default Footer;
 
 function Footer(props) {

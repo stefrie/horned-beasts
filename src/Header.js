@@ -1,13 +1,16 @@
+import React from 'react';
 
-function Header(props) {
-    return (
-        <>
-            <header>
-                <h1>{props.title}</h1>
-                <h2>{props.message}</h2>
-            </header>
-        </>
-    );
+class Header extends React.Component {
+	render() {
+		return (
+			<>
+				<header>
+					<h1>{Header.title}</h1>
+					<h2>{Header.message}</h2>
+				</header>
+			</>
+		);
+	}
 }
 
 export default Header;

@@ -1,3 +1,27 @@
+# ReadMe file for Horned Beasts
+## Attributions
+JB Tellez, Hexx King, Chance Harmon, Kristian Esvelt, Alex Grazda
+
+### Time Estimates for Lab 02
+- **Number and name of feature:** Feature #1: Display Images
+- **Estimate of time needed to complete:** 1 hour
+- **Start time:** 5:10 pm
+- **Finish time:** 
+- **Actual time needed to complete:** 1 hour ? mins, with a lot of help from Alex Grazda and Hexx King
+
+- **Number and name of feature:** Feature #1: Allow users to vote for their favorite beast
+- **Estimate of time needed to complete:**
+- **Start time:**
+- **Finish time:**
+- **Actual time needed to complete:**
+
+- **Number and name of feature:** Feature #3: Bootstrap
+- **Estimate of time needed to complete:**
+- **Start time:**
+- **Finish time:**
+- **Actual time needed to complete:**
+
+***
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +92,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
