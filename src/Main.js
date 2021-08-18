@@ -1,8 +1,10 @@
 import React from 'react';
-
+import HornedBeast from './HornedBeast';
 // --------------Lab 02------------//
 // import './App.css';
 // import Image from 'react-bootstrap/Image';
+
+
 
 class Main extends React.Component {
 	render() {
@@ -23,6 +25,9 @@ class Main extends React.Component {
 		);
 	}
 }
+
+export default Main;
+
 
 
 // --------------Lab 01------------//
@@ -98,17 +103,3 @@ class Main extends React.Component {
 //             </div>
 //         );
 //     }
-
-class HornedBeast extends React.Component {
-	render() {
-		return(
-			<>
-				<h2>{this.props.title}</h2>
-				<img src={this.props.image_url} alt="" title="" />
-				<p>{this.props.description}</p>
-			</>
-		);
-	}
-}
-
-export default Main;

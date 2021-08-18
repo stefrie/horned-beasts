@@ -20,8 +20,7 @@ class App extends React.Component {
 		return (
 			<>
 				<Header title="Horned Beasts" />
-				<Header message="Check out these amazing animals!" />
-				<Main />
+				<Main beastImages={this.state.beastImages} />
 				<Footer author="Stefanie Riehle" />
 			</>
 		);
