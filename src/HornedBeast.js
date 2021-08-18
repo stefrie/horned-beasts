@@ -23,7 +23,7 @@ class HornedBeast extends React.Component {
 				<h2>{this.props.title}</h2>
 				<img src={this.props.image_url} alt="" title="" />
 				<p>{this.props.description}</p>
-				<p>💖: {this.state.vote}</p>
+				<p>💗: {this.state.vote}</p>
 			</div>
 		);
 	}
