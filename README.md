@@ -21,6 +21,13 @@ JB Tellez, Hexx King, Chance Harmon, Kristian Esvelt, Alex Grazda
 **Finish time:** 5:08pm\
 **Actual time needed to complete:** 2 hours, 49 minutes with some great guidance/suggestions from Hexx on the pros and cons of React Bootstrap grid vs. other possible components. I ended up going with grid cards, which was waaay easier than I think grid would have been.
 
+### Time Estimates for Lab 03
+**Number and name of feature:** Feature #1: Display a Modal\
+**Estimate of time needed to complete:** 3 hours\
+**Start time:** 7:06pm\
+**Finish time:** \
+**Actual time needed to complete:** 
+
 ***
 # Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
