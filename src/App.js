@@ -23,8 +23,8 @@ class App extends React.Component {
 		return (
 			<>
 				<Header title="Horned Beasts" />
-				<Main 
-					beastImages={this.state.beastImages} 
+				<Main
+					beastImages={this.state.beastImages}
 					selectedBeast={this.handleSelectedBeast}
 				/>
 				<Footer author="Stefanie Riehle" />
