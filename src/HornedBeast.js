@@ -4,7 +4,6 @@ import './App.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-
 class HornedBeast extends React.Component {
     constructor(props) {
         super(props);
@@ -14,6 +13,11 @@ class HornedBeast extends React.Component {
         };
     }
 
+	// displayModal = (e) => {
+	// 	this.props.selectedBeast(this.props);
+	// 	console.log(e);
+	// }
+
     handleClick = () => {
         this.setState({
             vote: (this.state.vote += 1),
@@ -22,13 +26,26 @@ class HornedBeast extends React.Component {
 
     render() {
         return (
-            <Card style={{width: '14rem'}}>
-                <Card.Img onClick={this.props.selectedBeast} variant="top" src={this.props.image_url} alt="a horned beast" rounded fluid />
+            <Card style={{ width: '14rem' }}>
+                <Card.Img
+                    onClick={this.props.selectedBeast}
+                    variant="top"
+                    src={this.props.image_url}
+                    alt="a horned beast"
+                    rounded
+                    fluid
+                />
                 <Card.Body>
                     <Card.Title>{this.props.title}</Card.Title>
                     <Card.Text>{this.props.description}</Card.Text>
-                    <Button variant="outline-danger" size="sm" onClick={this.handleClick}>Click to Favorite</Button>
-					<Card.Text>💗{this.state.vote}</Card.Text>
+                    <Button
+                        variant="outline-danger"
+                        size="sm"
+                        onClick={this.handleClick}
+                    >
+                        Click to Favorite
+                    </Button>
+                    <Card.Text>💗{this.state.vote}</Card.Text>
                 </Card.Body>
             </Card>
         );
