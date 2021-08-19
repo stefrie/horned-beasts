@@ -1,32 +1,35 @@
 import React from 'react';
 import './App.css';
+import Card from 'react-bootstrap/Card';
 
 class HornedBeast extends React.Component {
-	constructor(props) {
+    constructor(props) {
         super(props);
         this.state = {
             vote: 0,
-			title: this.props.title,
+            title: this.props.title,
         };
     }
 
-	handleClick = () => {
-		this.setState({
-			vote: this.state.vote += 1,
-		});
-    }
+    handleClick = () => {
+        this.setState({
+            vote: (this.state.vote += 1),
+        });
+    };
 
-	render() {
-		console.log(this.state);
-		return(
-			<div onClick={this.handleClick}>
-				<h2>{this.props.title}</h2>
-				<img src={this.props.image_url} alt="" title="" />
-				<p>{this.props.description}</p>
-				<p>💗: {this.state.vote}</p>
-			</div>
-		);
-	}
+    render() {
+        console.log(this.state);
+        return (
+            <Card onClick={this.handleClick} style={{width: '14rem'}}>
+                <Card.Img variant="top" src={this.props.image_url} alt="a horned beast" rounded fluid />
+                <Card.Body>
+                    <Card.Title>{this.props.title}</Card.Title>
+                    <Card.Text>{this.props.description}</Card.Text>
+                    <Card.Text>💗{this.state.vote}</Card.Text>
+                </Card.Body>
+            </Card>
+        );
+    }
 }
 
 export default HornedBeast;
