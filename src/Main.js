@@ -16,6 +16,7 @@ class Main extends React.Component {
                     {this.props.beastImages.map((beast, idx) => (
                         <Col>
                             <HornedBeast
+								selectedBeast={this.props.selectedBeast}
                                 title={beast.title}
                                 image_url={beast.image_url}
                                 description={beast.description}

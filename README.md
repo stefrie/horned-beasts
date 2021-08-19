@@ -26,7 +26,7 @@ JB Tellez, Hexx King, Chance Harmon, Kristian Esvelt, Alex Grazda
 **Estimate of time needed to complete:** 3 hours\
 **Start time:** 7:06pm\
 **Finish time:** \
-**Actual time needed to complete:** 
+**Actual time needed to complete:** Got help from Michael Eclavea - very helpful in getting me set up with an onClick that actually worked!
 
 ***
 # Getting Started with Create React App

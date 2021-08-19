@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
-import Card from 'react-bootstrap/Card';
+// import SelectedBeast from './SelectedBeast';import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 
 class HornedBeast extends React.Component {
     constructor(props) {
@@ -21,7 +23,7 @@ class HornedBeast extends React.Component {
     render() {
         return (
             <Card style={{width: '14rem'}}>
-                <Card.Img variant="top" src={this.props.image_url} alt="a horned beast" rounded fluid />
+                <Card.Img onClick={this.props.selectedBeast} variant="top" src={this.props.image_url} alt="a horned beast" rounded fluid />
                 <Card.Body>
                     <Card.Title>{this.props.title}</Card.Title>
                     <Card.Text>{this.props.description}</Card.Text>
