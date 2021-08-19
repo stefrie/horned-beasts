@@ -12,7 +12,7 @@ class Main extends React.Component {
     render() {
         return (
             <Container fluid>
-                <Row xs={1} md={2} lg={4} xl={6} xxl={8} className="g-4">
+                <Row xs={1} md={2} lg={4} xl={6} xx l={8} className="g-4">
                     {this.props.beastImages.map((beast, idx) => (
                         <Col>
                             <HornedBeast
