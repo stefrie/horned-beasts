@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-// import SelectedBeast from './SelectedBeast';import Card from 'react-bootstrap/Card';
+// import SelectedBeast from './SelectedBeast';
+// import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
@@ -13,11 +14,6 @@ class HornedBeast extends React.Component {
         };
     }
 
-	// displayModal = (e) => {
-	// 	this.props.selectedBeast(this.props);
-	// 	console.log(e);
-	// }
-
     handleClick = () => {
         this.setState({
             vote: (this.state.vote += 1),
@@ -28,10 +24,12 @@ class HornedBeast extends React.Component {
         return (
             <Card style={{ width: '14rem' }}>
                 <Card.Img
-                    onClick={this.props.selectedBeast}
-                    variant="top"
+                    onClick={() => {
+						this.props.selectBeast(this.props.index);
+					}}
+                    variant='top'
                     src={this.props.image_url}
-                    alt="a horned beast"
+                    alt='a horned beast'
                     rounded
                     fluid
                 />
@@ -39,8 +37,8 @@ class HornedBeast extends React.Component {
                     <Card.Title>{this.props.title}</Card.Title>
                     <Card.Text>{this.props.description}</Card.Text>
                     <Button
-                        variant="outline-danger"
-                        size="sm"
+                        variant='outline-danger'
+                        size='sm'
                         onClick={this.handleClick}
                     >
                         Click to Favorite
