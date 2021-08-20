@@ -1,6 +1,7 @@
 import React from 'react';
+import { Form } from 'react-bootstrap';
 
-class Form extends React.Component {
+class Horns extends React.Component {
 	render() {
 		return (
 			<Form onChange={this.props.formHandler} style={{ width: '25%' }}>
@@ -16,4 +17,4 @@ class Form extends React.Component {
 	}
 }
 
-export default Form;
+export default Horns;

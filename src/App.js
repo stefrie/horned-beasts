@@ -7,7 +7,7 @@ import React from 'react';
 import beastImages from './data.json';
 import SelectedBeast from './SelectedBeast';
 import { Button } from 'react-bootstrap';
-import Form from './Form';
+import Horns from './Horns';
 
 class App extends React.Component {
     constructor(props) {
@@ -49,7 +49,7 @@ class App extends React.Component {
                 <Button onClick={this.renderModal}>Click</Button>
                 <SelectedBeast viewModal={this.state.viewModal} />
                 <Header title="Horned Beasts" />
-				<Form formHandler={this.formHandler} />
+				<Horns formHandler={this.formHandler} />
                 <Main
                     beastImages={beastImages}
                     selectBeast={this.selectBeast}
