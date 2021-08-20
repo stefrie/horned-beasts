@@ -5,24 +5,29 @@ import { Button } from 'react-bootstrap';
 class SelectedBeast extends React.Component {
     render() {
         return (
-			<>
-            <Modal
-                size="lg"
-                aria-labelledby="contained-modal-title-vcenter"
-                centered
-				show={this.props.viewModal}
-            >
-                <Modal.Header>Title?
-                </Modal.Header>
-                <Modal.Body>
-					<img src={this.props.image_url} style={{ width: '75%' }}></img>
-                    <p>{this.props.description}</p>
-                </Modal.Body>
-                <Modal.Footer>
-                    <Button onClick={this.props.onHide}>Close</Button>
-                </Modal.Footer>
-            </Modal>
-			</>
+            <>
+                <Modal
+                    size="md"
+                    aria-labelledby="contained-modal-title-vcenter"
+                    centered
+                    show={this.props.viewModal}
+                >
+                    <Modal.Header>
+						<p>{this.props.singleModal.title}</p>
+					</Modal.Header>
+                    <Modal.Body>
+                        <img
+                            src={this.props.singleModal.image_url}
+                            style={{ width: '400px' }}
+                        ></img>
+						<hr></hr>
+                        <p>{this.props.singleModal.description}</p>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button onClick={this.props.closeModal}>Close</Button>
+                    </Modal.Footer>
+                </Modal>
+            </>
         );
     }
 }

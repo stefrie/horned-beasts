@@ -22,7 +22,7 @@ class HornedBeast extends React.Component {
 
     render() {
         return (
-            <Card style={{ width: '14rem' }}>
+            <Card style={{ width: '14rem' }} onClick={() => this.props.renderModal(this.props.index)}>
                 <Card.Img
                     onClick={() => {
 						this.props.selectBeast(this.props.index);

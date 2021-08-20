@@ -17,6 +17,7 @@ class Main extends React.Component {
                         <Col>
                             <HornedBeast
                                 selectBeast={this.props.selectBeast}
+								renderModal={this.props.renderModal}
                                 title={beast.title}
                                 image_url={beast.image_url}
                                 description={beast.description}
