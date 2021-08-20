@@ -12,13 +12,11 @@ class SelectedBeast extends React.Component {
                 centered
 				show={this.props.viewModal}
             >
-                <Modal.Header closeButton>
-                    <Modal.Image id="contained-modal-title-vcenter">
-						{this.props.image_url}
-					</Modal.Image>
+                <Modal.Header>Title?
                 </Modal.Header>
                 <Modal.Body>
-                    {this.props.description}
+					<img src={this.props.image_url} style={{ width: '75%' }}></img>
+                    <p>{this.props.description}</p>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={this.props.onHide}>Close</Button>
