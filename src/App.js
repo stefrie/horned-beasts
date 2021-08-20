@@ -6,7 +6,6 @@ import Footer from './Footer';
 import React from 'react';
 import beastImages from './data.json';
 import SelectedBeast from './SelectedBeast';
-import { Button } from 'react-bootstrap';
 import Horns from './Horns';
 
 class App extends React.Component {
@@ -16,28 +15,32 @@ class App extends React.Component {
             viewModal: false,
             selectedBeast: beastImages[0],
         };
-        this.selectBeast = this.selectBeast.bind(this);
     }
 
 	formHandler = () => {
-		alert('hola');
+		alert(event.target.value);
 	}
 
-    renderModal() {
+    renderModal = (index) => {
         let currentState = this.state.viewModal;
-        this.setState({
+		console.log('hi', index);
+		if (typeof index !== 'number') {
+			this.setState({
+				viewModal: !currentState,
+			});
+		} else {this.setState({
             viewModal: !currentState,
+			selectedBeast: beastImages[index],
         });
-        // alert(this.state.selectedBeast);
-    }
+	}}
 
-    selectBeast(index) {
+    selectBeast = (index) => {
         this.setState({
             selectedBeast: beastImages[index],
         });
     }
 
-    unselectBeast() {
+    unselectBeast = () => {
         this.setState({
             selectedBeast: undefined,
         });
@@ -46,18 +49,17 @@ class App extends React.Component {
     render() {
         return (
             <>
-                <Button onClick={this.renderModal}>Click</Button>
-                <SelectedBeast viewModal={this.state.viewModal} />
+                <SelectedBeast viewModal={this.state.viewModal} closeModal={this.renderModal} singleModal={this.state.selectedBeast} />
                 <Header title="Horned Beasts" />
 				<Horns formHandler={this.formHandler} />
                 <Main
                     beastImages={beastImages}
                     selectBeast={this.selectBeast}
+					renderModal={this.renderModal}
                 />
-                {this.state.selectedBeast === undefined ? null : (
+                {/* {this.state.selectedBeast === undefined ? null : (
                     <SelectedBeast onHide={this.unselectBeast} />
-                )}
-				// ^^^ is there a problem with the syntax on lines 54-56?
+                )} */}
                 <Footer author="Stefanie Riehle" />
                 {/* <SelectedBeast /> */}
             </>
